@@ -18,7 +18,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import adroidproject.darlan.ucam.com.a18horas.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
