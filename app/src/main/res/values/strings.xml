@@ -2,7 +2,7 @@
     <string name="app_name">18 Horas</string>
     <string name="action_settings">Sobre</string>
 
-       <string name="regioes_prompt">Escolha uma linguagem</string>
+    <string name="regioes_prompt">Escolha uma linguagem</string>
     <string-array name="regioes">
         <item>Rio de Janeiro</item>
         <item>São Paulo</item>
