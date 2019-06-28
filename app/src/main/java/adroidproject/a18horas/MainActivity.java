@@ -18,8 +18,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-
-
 public class MainActivity extends AppCompatActivity {
 
     private WebView webView;
@@ -29,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        //toolbar.setLogo(R.drawable.logo_splash);
+        toolbar.setNavigationIcon(R.drawable.logo_icon);
         setSupportActionBar(toolbar);
 
         webView = findViewById(R.id.webView);
