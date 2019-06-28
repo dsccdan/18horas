@@ -1,4 +1,4 @@
-package adroidproject.darlan.ucam.com.a18horas;
+package adroidproject.a18horas;
 
 import android.graphics.Bitmap;
 import android.net.http.SslError;
@@ -17,6 +17,8 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import adroidproject.darlan.ucam.com.a18horas.R;
 
 public class MainActivity extends AppCompatActivity {
 

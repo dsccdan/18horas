@@ -31,7 +31,8 @@
         android:layout_height="52dp"
         android:textAlignment="textEnd"
         android:entries="@array/regioes"
-        android:prompt="@string/regioes_prompt" />
+        android:prompt="@string/regioes_prompt"
+        />
 
     <android.support.v7.widget.AppCompatImageView
 

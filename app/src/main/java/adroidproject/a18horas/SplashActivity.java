@@ -1,10 +1,12 @@
-package adroidproject.darlan.ucam.com.a18horas;
+package adroidproject.a18horas;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import adroidproject.darlan.ucam.com.a18horas.R;
 
 public class SplashActivity extends AppCompatActivity {
 
