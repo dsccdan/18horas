@@ -34,11 +34,16 @@
         android:prompt="@string/regioes_prompt"
         />
 
-    <android.support.v7.widget.AppCompatImageView
-
+    <ImageView
+        android:id="@+id/chat_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/spinner"
-        android:background="@color/colorChat"/>
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorChat"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/chat_image"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>
