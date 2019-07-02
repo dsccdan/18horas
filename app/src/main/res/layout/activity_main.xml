@@ -14,14 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:paddingLeft="16dp"
             app:popupTheme="@style/AppTheme.PopupOverlay">
         </android.support.v7.widget.Toolbar>
 
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="230dp"
         android:layout_below="@id/toolbar"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="144dp" />
@@ -30,22 +29,64 @@
         android:id="@+id/spinner"
         android:layout_below="@id/webView"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="40dp"
         android:textAlignment="textEnd"
         android:entries="@array/regioes"
         android:prompt="@string/regioes_prompt"
         />
 
-    <ImageView
-        android:id="@+id/chat_image"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/spinner"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/colorChat"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/chat_image"
-        tools:ignore="ContentDescription" />
+        android:background="@drawable/chat_image"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_mensagem_chat"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:shadowColor="@color/colorChat"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:clickable="true"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_send_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

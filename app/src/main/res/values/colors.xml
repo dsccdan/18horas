@@ -3,5 +3,5 @@
     <color name="colorPrimary">#C22821</color>
     <color name="colorPrimaryDark">#991F1A</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorChat">#EEEEEE</color>
+    <color name="colorChat">#000000</color>
 </resources>
