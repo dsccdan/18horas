@@ -3,6 +3,7 @@
     <string name="action_settings">Sobre</string>
 
     <string name="regioes_prompt">Escolha uma Regiao</string>
+    <string name="placeholder">Digite aqui...</string>
     <string-array name="regioes">
         <item>Manaus</item>
         <item>São Paulo</item>
